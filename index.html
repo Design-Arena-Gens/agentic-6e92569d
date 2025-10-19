@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Car Control System</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #1a1a1a;
+        }
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .note {
+            background-color: #fffbe5;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RC Car Control System</h1>
+        <p>This project contains the complete source code for a Bluetooth-controlled RC car system.</p>
+        
+        <div class="note">
+            <p><strong>Note:</strong> This is a placeholder page. The core of this project is a native Android application and Arduino firmware, which cannot be hosted or run directly on a web server. The code for both components is located in the repository.</p>
+        </div>
+
+        <h2>Components</h2>
+        <ul>
+            <li><strong>Android Application:</strong> A native Android app built with Kotlin and Jetpack Compose for controlling the car. The source code is in the <code>/AndroidApp</code> directory.</li>
+            <li><strong>Arduino Firmware:</strong> The firmware for the Arduino Uno microcontroller that manages the car's motors. The source code is in the <code>/ArduinoFirmware</code> directory.</li>
+        </ul>
+
+        <h2>How to Use</h2>
+        <ol>
+            <li>
+                <strong>Flash the Firmware:</strong>
+                <ul>
+                    <li>Open the <code>ArduinoFirmware/RcCarFirmware/RcCarFirmware.ino</code> file in the Arduino IDE.</li>
+                    <li>Connect your Arduino Uno to your computer.</li>
+                    <li>Upload the sketch to the board.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Build and Install the Android App:</strong>
+                <ul>
+                    <li>Open the <code>AndroidApp</code> project in Android Studio.</li>
+                    <li>Build the project and install the APK on your Android device.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Connect and Control:</strong>
+                <ul>
+                    <li>Ensure the RC car is powered on.</li>
+                    <li>Pair your Android phone with the "HC-05" Bluetooth module in your phone's Bluetooth settings.</li>
+                    <li>Open the "RC Car" app. It should automatically connect to the car.</li>
+                    <li>Use the on-screen controls to drive the car.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
